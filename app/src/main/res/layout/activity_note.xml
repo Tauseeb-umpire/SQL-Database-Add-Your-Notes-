@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    tools:context=".note">
+
+    <LinearLayout
+        android:background="@drawable/background"
+        android:layout_margin="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#3653F4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:paddingLeft="10pt"
+            android:id="@+id/tvDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="noun. a brief record of something written down to assist the memory or for future reference. notes, a record or outline of a speech, statement, testimony, etc., or of one's impressions of something. ... a brief written or printed statement giving particulars or information." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_marginRight="10pt"
+                android:id="@+id/ivDelete"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/delet" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/create" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
